@@ -1,0 +1,10 @@
+PureLine Asztali Alkalmazás – Használati útmutató
+
+Asztali alkalmazásunk itt tölthető le: https://drive.google.com/drive/folders/1wMkq-geyZT373qPMw3TD5t7OSPBZ3EVz?usp=drive_link
+
+Hogyan indítható el az alkalmazás?
+Nyissuk meg a letöltött AsztaliAlkalmazas mappát.
+
+Keresd meg a következő fájlt:
+pureline-admin.exe
+Kattints rá kétszer és az alkalmazás azonnal elindul.
