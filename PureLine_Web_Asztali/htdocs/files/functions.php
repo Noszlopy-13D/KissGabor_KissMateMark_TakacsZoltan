@@ -398,15 +398,20 @@ function select_input($data, $options)
 }
 
 function get_category_name($category_id) {
-    global $conn; // Az adatbázis kapcsolathoz
+    global $conn;
 
     $stmt = $conn->prepare("SELECT name FROM categories WHERE id = ?");
     $stmt->bind_param("i", $category_id);
     $stmt->execute();
     $result = $stmt->get_result();
 
-    return $result->fetch_column(); // Visszaadja a kategória nevét
+    if ($row = $result->fetch_assoc()) {
+        return $row['name']; // Kategória neve visszaadva
+    }
+
+    return null; // Ha nincs ilyen kategória
 }
+
 
 
 function product_item_ui_1($pro)
